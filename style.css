@@ -345,9 +345,6 @@ a {
     display: none;
 }
 
-
-
-
 .search-form form span::before {
     content: "\00A0";
     display: inline-block;
@@ -428,7 +425,7 @@ a {
 .sorting-left-container table tr td {
     padding-right: 3em;
     text-transform: none;
-    text-decoration: underline;
+    text-decoration: dotted;
 
 }
 
@@ -443,11 +440,7 @@ a {
     
 }
 
-.sorting-left-container table tr a:after {
-    color: grey;
-    text-decoration: underline;
 
-}
 
 .sorting-right {
     position: relative;
@@ -496,10 +489,12 @@ a {
 .book {
     color: white;
     text-align: center;
+    padding-top: 0.4em;
     font-weight: normal;
-    width: 15em;
+    width: 5em;
+    display: inline-block;
     
-    padding-right: 1em;
+    height: 1.2em;
 
 }
 
