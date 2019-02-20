@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Search</title>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="header-container">
+                <nav class="main-navigation">
+                    <div class="grid-item"><a href="">Information</a></div>
+                    <div class="grid-item"><a href="">Photo and video</a></div>
+                    <div class="grid-item-logo">
+                        <div class="logo">
+                            <div class="logo-img"><a href="index.html">
+                                <img height="60" src="img/main-logo.png" alt="Logo"></a>
+                            </div>
+                            <div class="triangle-down">
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="grid-item"><a href="">Map</a></div>
+                    <div class="grid-item"><a href="searchpage.html">Hotels</a></div>                            
+                      
+                </nav>
+            </div> 
+            <div class="content">
+                <div class="search">
+                    <div class="search-form">
+                        <form action="">
+                            <div class="facilities"> 
+                                <h3 class="choice font-white">Facilities</h3>
+                                <label>
+                                   <input class="checkbox" type="checkbox" name="swimming-pool" value="swimming-pool" checked>
+                                   <span class="box"></span>Swimming-pool<br>
+                                </label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="parking" value="parking">
+                                    <span></span>Parking<br>
+                                </label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="wi-fi" value="wi-fi">
+                                    <span></span>Wi-Fi<br>
+                                </label>                                
+                            </div>   
+                            <div class="type-accommodation">
+                                <h3 class="choice font-white">Type of accommodation</h3>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="hotel" value="hotel" checked>
+                                    <span></span>Hotel<br>
+                                </label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="motel" value="motel" checked>
+                                    <span></span>Motel<br>
+                                </label>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="apartment" value="apartment" checked>
+                                    <span></span>Apartment<br>
+                                </label>                                
+                            </div>
+                            <div class="range-filter">
+                                <h3 class="cost-night font-white">Cost per night</h3>
+                                
+                                <div class="range-control">
+                                    <div class="scale">
+                                        <div class="bar" style="width:70%;"></div> 
+                                    </div>                                    
+                                    <div class="toggle min-toggle"></div>
+                                    <div class="toggle max-toggle"></div>
+                                </div>    
+                                
+                                <div class="price-control">
+                                    from 
+                                    <input class="min-price" type="text" value="0">
+                                    to 
+                                    <input class="max-price" type="text" value="100">
+                                </div>
+                            </div>    
+
+                            
+
+                                
+                                <!-- <table class="from-to-cost font-white">
+                                    <td>
+                                        <tr>From</tr>
+                                    </td>
+                                    <td>
+                                        <tr>To</tr>
+                                    </td>
+                                </table>
+                                
+                                <div class="cost-line font-white">
+                                    <input type="text" name="priceRange" id="slider" class="span2" value=""
+                                    data-slider-min="0"
+                                    data-slider-max="50000"
+                                    data-slider-step="1"
+                                    data-slider-value="[0,50000]" />
+                                </div>
+                                <div>
+                                    <input class="show-button font-white" type="button" value="Show">
+                                </div>     -->
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+                <div class="sort">
+                    <div class="found">
+                        <h3>Found:3</h3>
+                    </div>  
+                    <div class="sorting-left"> 
+                        <div class="sorting-left-container">
+                            <table>
+                                <tr>
+                                    <td>Sort</td> 
+                                    <td>
+                                        <a href="">by price</a>
+                                    </td>                                    
+                                    <td> 
+                                        <a href="">by type</a>
+                                    </td>                          
+                                    <td> 
+                                        <a href="">by rating</a>
+                                    </td>
+                                </tr> 
+                            </table>  
+                        </div>                    
+                    </div>
+                    <div class="sorting-right">
+                        <div class="point-up">
+                            ∆
+                        </div>
+                        <div class="point-down point-down-active">
+                            ∇ 
+                        </div>               
+                    </div>
+                </div> 
+                    <div class="hotels">
+                        <div class="hotel-short-info">
+                            <div class="hotel-photo">
+                                <a>
+                                    <img src="img/hotels/hotel-1.png" alt="hotel-photo">
+                                </a>
+                            </div>
+                            <div class="hotel-description">    
+                                <h2>Amara Resort & Spa</h2>
+                                <table class="name-price">
+                                    <tr>
+                                        <td> Hotel</td>                                  
+                                    
+                                        <td> From $100</td>
+                                    </tr>
+                                </table>
+                                <div class="hotels-buttons">
+                                    <div class="more">
+                                            <a href="">More</a>
+                                        </div>
+                                        <div class="book">
+                                            <a href="">Book</a>
+                                        </div> 
+                                </div>
+                                   
+                            </div>
+                            <div class="rating">
+                                <div class="rating-star">
+                                    &#9733;&#9733;&#9733;&#9733;
+                                </div>
+                                <div class="rating-value">
+                                    Rating: 8.5
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="hotel-short-info">
+                            <div class="hotel-photo">
+                                <a>
+                                    <img src="img/hotels/hotel-2.png" alt="hotel-photo">
+                                </a>
+                            </div>
+                            <div class="hotel-description">    
+                                <h2>Desert Quail Inn</h2>
+                                <table class="name-price">
+                                    <tr>
+                                        <td> Motel</td>
+                                    
+                                        <td> From $80</td>
+                                    </tr>
+                                </table>
+                                <div class="hotels-buttons">
+                                    <div class="more">
+                                            <a href="">More</a>
+                                        </div>
+                                        <div class="book">
+                                            <a href="">Book</a>
+                                        </div> 
+                                </div>                               
+                                
+                            </div>
+                            <div class="rating">
+                                <div class="rating-star">
+                                    &#9733;&#9733;&#9733;
+                                </div>
+                                <div class="rating-number">
+                                    Rating: 8.9
+                                </div>
+
+                            </div>
+                        </div>   
+                        <div class="hotel-short-info">
+                            <div class="hotel-photo">
+                                <a>
+                                    <img src="img/hotels/hotel-3.png" alt="hotel-photo">
+                                </a>
+                            </div>
+                            <div class="hotel-description">    
+                                <h2>Villas at Poco Diablo</h2>
+                                <table class="name-price">
+                                    <tr>
+                                        <td> Apartment</td>
+                                    
+                                        <td> From $50</td>
+                                    </tr>
+                                </table>
+                                <div class="hotels-buttons">
+                                    <div class="more">
+                                            <a href="">More</a>
+                                        </div>
+                                        <div class="book">
+                                            <a href="">Book</a>
+                                        </div> 
+                                    </div> 
+                            </div>
+                            <div class="rating">
+                                <div class="rating-star">
+                                    &#9733;&#9733;
+                                </div>
+                                <div class="rating-number">
+                                    Rating: 9.2
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div>    
+
+            </div>
+            <footer class="footer">
+                    <div class="social-media">
+                        <a>
+                            <img src="">
+                        </a>
+                        <a>
+                            <img src="">
+                        </a>
+                        <a>
+                            <img src="">
+                        </a>
+                    </div>    
+    
+                </footer>
+        </div>        
+    <script src="libs/js/bootstrap-slider.min.js"></script>
+    </body>
+</html>    

@@ -1,0 +1,549 @@
+body {
+    font-size: 1.1em;
+    line-height: 1em;
+    font-family: 'ptans', arial, sans-serif;
+    width: auto;   
+    text-transform: uppercase;   
+}
+
+
+
+ .header-container,
+ .content, 
+ .footer{
+      
+    max-width: 1200px;
+    margin: 0 auto;    
+    
+}
+
+.font-brown {
+    color: brown;
+
+}
+
+.font-white {
+    color: white;
+}
+
+/* Header */
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    grid-column-gap: 3em;
+    text-align: center;
+    align-content: end;
+    padding-left: 2em;
+      
+        
+} 
+
+.grid-item {
+    padding-top: 0.5em;
+    }
+ 
+.logo-img  {
+    background: url("img/background-logo.png") no-repeat 50% 50%;
+    margin-bottom: -40px;  
+    border-radius: 35px;  
+    height: 70px;     
+    }
+
+
+.main-navigation:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/*content */
+
+.main-picture {
+    background-image: url("img/main-photo.png");
+    height: 550px;
+    margin: 1em 2em;
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: repeat (5, 1fr); 
+    
+    
+}
+
+
+.welcome {
+    background-image: url("img/hotels/welcome.png");
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+}
+
+.main-picture .dashed {
+    background-image: url("img/hotels/th-the.png"), url("img/hotels/slashes.png");
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+    }
+
+.sedona {
+    background-image: url("img/Sedona.png");
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+        
+}
+
+.quote {
+    background-image: url("img/because.png");
+    background-repeat: no-repeat; 
+    background-position: 50% 100%;
+}
+
+.gap {
+    background-image: url("img/gap.png");
+    background-repeat: no-repeat; 
+    background-position: 50% 100%;
+}
+
+.promo-1 {
+    margin: 1em 2em;
+    text-align: center;    
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    height: 13em;
+}
+
+.promo-1 h3 {
+    padding: 4em 0 2em 0;
+          
+}
+
+.features-1 {
+    display: grid;
+    grid-template-columns: 33% 66% repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 1em 2em;
+        
+}
+
+.features-text {
+    background-color: rgb(142, 169, 194);
+    text-align: center;
+
+}
+
+.features-text h3 {
+    padding: 2em 0 1em 0;
+}
+
+.features-text p:last-child {
+    padding: 1em 2em 2em 2em;    
+} 
+
+.features-text .dashed::before,
+.recomendation-block .dashed::before {
+    content: "-";
+    width: 1em;
+    padding-right: 0.2em;
+}
+
+.features-text .dashed::after,
+.recomendation-block .dashed::after {
+    content: "-";
+    width: 1em;
+    padding-left: 0.2em;
+}
+
+
+.features-2 {
+    display: grid;
+    grid-template-columns: 66% 33% repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 0 1.25em 0 2em;
+        
+}
+
+.photo {
+    width: 100%;     
+}
+
+.recomendation {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 0 2em 0 2em;
+    grid-column-gap: 1em;
+    padding-top: 0;
+            
+}
+
+.recomendation-block {
+    text-align: center;
+    padding: 2em 3em 1em 2em;
+    margin-bottom: 2em;
+    }
+
+.recomendation-block p, 
+.recomendation-block h3 {
+    padding: 0.4em;
+}    
+
+.background-grey {
+    background-color: rgb(211, 207, 207);
+}
+
+
+
+/*Booking*/
+
+.booking {
+    margin: 1em 2em; 
+    position: relative; 
+}
+
+.booking-promo {    
+    height: 15em;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.booking-promo p {
+    padding-top: 2em; 
+    width: 35em;
+    margin: auto;
+}
+
+.booking-promo h2 {
+    font-weight: bold;
+}
+
+.booking-form {
+    width: 30%;
+    background-color: #fff;  
+    font-weight: bold;  
+    position: absolute;   
+    left: 35%;
+    top: 14.3em;  
+}
+
+
+.booking-form-hide{
+    display: none;
+}
+
+.booking-form-show {
+    display: block;
+    
+}
+
+.booking-form input{
+    background-color: rgb(211, 207, 207);
+    border-style: none;
+    height: 3em;
+}
+
+.from-to {
+    display: grid;
+    grid-template-columns: 25% 75% repeat( auto-fit, minmax(250px, 1fr) );
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 0.5em;
+    
+}
+
+.adults-children {
+    display: grid;
+    grid-template-columns: 50% 50% repeat( auto-fit, minmax(250px, 1fr) );
+    margin-top: 1em;
+    padding-left: 2em; 
+}
+
+.adults-children input {
+    text-align: center;
+}
+
+
+
+.search-accommodation {    
+    background-color: rgb(105, 89, 77);    
+    color: white;
+    text-align: center;
+    height: 4.5em;
+    width: 30%;
+    text-transform: uppercase;
+    margin: 2em auto -10em auto;
+   
+}
+
+.search-button {
+    display: grid;
+    grid-template-rows: 100%;
+    margin-top: 2em;
+            
+}
+
+.search-button input {
+    padding: 1em 0 0.8em 0;
+    color: white;
+    background-color: rgb(142, 169, 194);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase; 
+
+
+}
+
+.map {
+    margin: 1em 2em;
+}
+
+/* Footer */
+
+.footer {
+    border-top: 0.1em solid #000;
+    background-color: rgb(211, 207, 207);
+    height: 5em;
+    
+}
+
+
+
+/*Hotel page */
+
+.search,
+.sort,
+.hotels {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+}
+
+.search {
+    height: 15em;
+    background-image: url("img/hotels/main-hotels.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.search-form {       
+    margin: 1em 4em;          
+}
+
+.search-form form {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
+    color: white;
+    padding: 1em;
+    justify-self: start;
+}
+
+/*check boxes*/
+
+.checkbox {
+    display: none;
+}
+
+
+
+
+.search-form form span::before {
+    content: "\00A0";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24px; 
+    height: 24px;
+    margin: 1em 1em 1em 0px;       
+    border: 2px solid rgb(255, 255, 255);    
+    vertical-align: baseline;      
+    }
+
+.checkbox[type=checkbox]:checked  {
+    content: "\2714";
+    text-align: center;    
+    color: white;
+   
+    }
+
+
+/* Price filter */
+
+
+
+.range-filter {
+    
+    width: 19em;
+    margin-top: 0;
+    
+}
+
+.range-control {    
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0 30px;
+    
+}
+
+.range-control .scale {
+    margin-top: 1em;
+    height: 2px;
+    color: rgba(238, 226, 226, 0.534);
+
+}
+
+.range-control .bar {
+    height: 2px;
+    background-color: white;
+}
+
+.range-control .tongle {
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    border: 8px solid white;
+    background: #ababab;
+    top: 3em;
+    left: 3em;
+
+}
+
+
+
+.sort {
+    display: grid;
+    grid-template-columns: 20% 75% 5% repeat( auto-fit, minmax(250px, 1fr) );    
+    border-bottom: 1px solid rgb(224, 218, 218);
+}
+
+.found {
+    padding: 1em 4em;
+}
+
+.sorting-left-container  {
+    padding-top: 2em;
+           
+}
+
+.sorting-left-container table tr td {
+    padding-right: 3em;
+    text-transform: none;
+    text-decoration: underline;
+
+}
+
+.sorting-left-container table tr td:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sorting-left-container table tr td a:active {
+    color: darkcyan;
+    
+}
+
+.sorting-left-container table tr a:after {
+    color: grey;
+    text-decoration: underline;
+
+}
+
+.sorting-right {
+    position: relative;
+}
+
+.sorting-right div {
+    position: absolute;
+}
+
+.point-up {
+    top: 50%;
+}
+
+.point-down {
+    top: 30%;
+    right: 30%;
+}
+
+
+
+.hotel-short-info {
+    padding: 2em 4em 2em 4em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 70% 15% repeat( auto-fit, minmax(250px, 1fr) );
+    }
+
+.hotel-photo {
+    align-self: center;
+    /* background: url('img/hotels/hotel-1.png');
+    background-size: cover; */
+        
+}
+
+.hotel-description h2 {
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+
+.name-price tr td {
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+.more,
+.book {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    width: 15em;
+    
+    padding-right: 1em;
+
+}
+
+.hotels-buttons {
+    
+}
+
+
+.more {    
+    background-color: rgb(142, 169, 194);
+        
+
+}
+
+.book {
+    background-color: rgb(105, 89, 77);    
+    
+}
+
+.rating-star {
+    padding: 1em 2em 1em 0.5em;    
+}
+
+.rating-value {
+    padding: 1em 1em 1em 0;
+}
+
+@font-face {
+    font-family: 'ptansbold';
+    src: url('fonts/ptsansbold.woff') format('woff');
+    src: url('fonts/ptsansbold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: capitalize;
+}
+
+
+@font-face {
+    font-family: 'ptans';
+    src: url('fonts/ptsans.woff') format('woff');
+    src: url('fonts/ptsans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
