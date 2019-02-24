@@ -302,8 +302,8 @@ body {
 }
 
 .adults-children input {
-    text-align: center;
-    width: 20px;
+    padding: auto;
+    width: 15px;
     height: 15px;
     font-weight: bold;
    
@@ -442,44 +442,71 @@ body {
 
 
 
-.range-filter {
-    
-    width: 19em;
-    margin-top: 0;
+.range-filter {    
+    width: 15em;
     
 }
 
-.range-control {    
+.range-controls {    
     position: relative;
     margin-bottom: 1.5em;
     padding: 0 30px;
+    height: 5em;
+    background-color: rgb(223, 217, 217);
+    border-radius: 0.2em;
+    overflow: hidden;
     
 }
 
-.range-control .scale {
-    margin-top: 1em;
-    height: 2px;
+.range-controls .scale {
+    margin-top: 2.4em;
+    height: 0.2em;
     color: rgba(238, 226, 226, 0.534);
+    width: 16em;
+    padding: auto;
 
 }
 
-.range-control .bar {
-    height: 2px;
-    background-color: white;
+.range-controls .bar {
+    height: 0.2em;
+    background-color: green;
 }
 
-.range-control .tongle {
-    width: 8em;
-    height: 8em;
-    position: absolute;
-    border: 8px solid white;
+.range-controls .toggle {
+    width: 0.5em;
+    height: 0.5em;
+    border: 0.4em solid white;
     background: #ababab;
-    top: 3em;
-    left: 3em;
+    position: absolute;
+    top: 1.9em;
+    left: 1.2em;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .max-toggle {
+    left: 8em;
+}
+
+.price-controls {
+    border: 0.1em solid white;
+}
+
+.price-controls input {
+    display: inline;
+    width: 20%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.0em;   
+    text-align: center; 
 
 }
 
-
+.min-price {
+    border-left: 1px solid white;
+}
 
 .sort {
     display: grid;
